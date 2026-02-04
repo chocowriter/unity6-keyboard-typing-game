@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace TypingGame
 {
-    public class TitleScene : MonoBehaviour
+    public class LoginPanel : MonoBehaviour
     {
     
     }    

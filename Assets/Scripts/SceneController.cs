@@ -5,6 +5,8 @@ namespace TypingGame
     public enum ESceneName
     {
         Title = 0,
+        Word,
+        Sentence,
         Game
     }
     
