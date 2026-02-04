@@ -182,6 +182,9 @@ GameObject:
   - component: {fileID: 645572968}
   - component: {fileID: 645572970}
   - component: {fileID: 645572969}
+  - component: {fileID: 645572973}
+  - component: {fileID: 645572972}
+  - component: {fileID: 645572971}
   m_Layer: 5
   m_Name: Text (TMP)_QuestionWord
   m_TagString: Untagged
@@ -308,6 +311,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645572967}
   m_CullTransparentMesh: 1
+--- !u!114 &645572971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645572967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aac598098b1c254db6f0b11c52ec982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TypingGame.WordController
+--- !u!114 &645572972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645572967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5dea56b0faf3d40ba5ef91a3a4a79c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TypingGame.WordView
+--- !u!114 &645572973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645572967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0325bf51d3cb5b54290e6bf82be7ce04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TypingGame.WordModel
+  content:
+    nameEN: Tree
+    nameKO: "\uB098\uBB34"
 --- !u!1001 &742969752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1827,6 +1869,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0325bf51d3cb5b54290e6bf82be7ce04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypingGame.WordModel
+  content:
+    nameEN: 
+    nameKO: 
 --- !u!1 &1343868422
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,15 +11,15 @@ namespace TypingGame
 
         private void Awake()
         {
-            
-        }
-
-        private void Update()
-        {
             Keyboard.current.onTextInput += c =>
             {
                 Debug.Log(c);
             };
+        }
+
+        private void Update()
+        {
+            
         }
     }
 }
