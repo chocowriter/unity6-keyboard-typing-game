@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 645572970}
   - component: {fileID: 645572969}
   m_Layer: 5
-  m_Name: Text (TMP)_Word
+  m_Name: Text (TMP)_QuestionWord
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
