@@ -6,8 +6,8 @@ namespace TypingGame
 {
     public class WordView : MonoBehaviour
     {
-        private TextMeshProUGUI textTyping;
-        private TextMeshProUGUI textTarget;
+        [SerializeField] private TextMeshProUGUI textTyping;
+        [SerializeField] private TextMeshProUGUI textTarget;
 
 
         public void Init()

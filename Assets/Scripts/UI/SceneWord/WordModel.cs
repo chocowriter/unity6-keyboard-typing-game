@@ -32,6 +32,7 @@ namespace TypingGame
         {
             //wordTester.Init();
             content.nameEN = "banana";
+            content.nameKO = "바나나";
         }
 
         public char[] GetTargetChars(ELanguageSupport language)
