@@ -11,35 +11,34 @@ namespace TypingGame
     
     public class WordModel : MonoBehaviour
     {
-        [SerializeField] private Content content;
-        
+        //[SerializeField] private Content content;
+
+        private string targetString = "sample";
         private char[] targetArray;
         
-        //private WordTester wordTester;
-        public string stringTarget;
-
         private void Awake()
-        {
-            //wordTester = GetComponent<WordTester>();
-        }
-
-        private void Start()
         {
             Init();
         }
 
-        public void Init()
+        private void Start()
         {
-            //wordTester.Init();
-            content.nameEN = "banana";
-            content.nameKO = "바나나";
+            
         }
 
-        public char[] GetTargetChars(ELanguage language)
+        public void Init()
         {
-            char[] charArray = content.nameEN.ToCharArray();
-            targetArray = new char[charArray.Length];
-            return charArray;
+            targetArray = targetString.ToCharArray();
+        }
+        
+        public string GetTargetString()
+        {
+            return targetString;
+        }
+        
+        public char GetTargetCharacter(int _index)
+        {
+            return targetArray[_index];
         }
     }
 }

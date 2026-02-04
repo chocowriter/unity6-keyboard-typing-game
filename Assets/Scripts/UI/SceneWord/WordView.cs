@@ -21,9 +21,19 @@ namespace TypingGame
             
         }
 
-        public void SetTyping(char _c)
+        public bool SetTyping(char _c)
         {
-            textTyping.text += _c.ToString();
+            char target = model.GetTargetCharacter(0);
+            if (target == _c)
+            {
+                textTyping.text += _c.ToString();    
+            }
+            else
+            {
+                textTarget.color = Color.red;
+            }
+
+            return true;
         }
 
         public void SetTarget(string _target)

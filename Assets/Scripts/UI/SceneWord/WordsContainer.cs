@@ -9,7 +9,7 @@ namespace TypingGame
     {
         public Dictionary<string, string> englishWords = new Dictionary<string, string>();
         
-        private void Awake()
+        protected override void Awake()
         {
             Init();
         }
