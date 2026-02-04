@@ -11,30 +11,23 @@ namespace TypingGame
     
     public class WordModel : MonoBehaviour
     {
-        private Content contentTarget;
-        private Content contentTyping;
-
+        private Content content;
+        
         private char[] targetArray;
-        private char[] typingArray;
+        
+        private WordTester wordTester;
+        
 
         private void Awake()
         {
-            
+            wordTester.Init();
+            content.nameEN = wordTester.GetEnglishByID("id-1");
         }
 
         public char[] GetTargetChars(ELanguageSupport language)
         {
-            
-            char[] charArray = contentTarget.nameEN.ToCharArray();
+            char[] charArray = content.nameEN.ToCharArray();
             targetArray = new char[charArray.Length];
-            typingArray = new char[charArray.Length];
-            
-            return charArray;
-        }
-
-        public char[] GetTypingChars(ELanguageSupport language)
-        {
-            char[] charArray = contentTyping.nameEN.ToCharArray();
             return charArray;
         }
     }

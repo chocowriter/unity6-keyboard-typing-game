@@ -1697,6 +1697,9 @@ GameObject:
   - component: {fileID: 1197681655}
   - component: {fileID: 1197681654}
   - component: {fileID: 1197681653}
+  - component: {fileID: 1197681659}
+  - component: {fileID: 1197681658}
+  - component: {fileID: 1197681657}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1788,6 +1791,42 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1197681657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197681652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aac598098b1c254db6f0b11c52ec982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TypingGame.WordController
+--- !u!114 &1197681658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197681652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5dea56b0faf3d40ba5ef91a3a4a79c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TypingGame.ModelView
+--- !u!114 &1197681659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197681652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0325bf51d3cb5b54290e6bf82be7ce04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TypingGame.WordModel
 --- !u!1 &1343868422
 GameObject:
   m_ObjectHideFlags: 0

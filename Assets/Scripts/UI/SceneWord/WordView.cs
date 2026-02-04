@@ -4,7 +4,7 @@ using TMPro;
 
 namespace TypingGame
 {
-    public class ModelView : MonoBehaviour
+    public class WordView : MonoBehaviour
     {
         private TextMeshProUGUI textTyping;
         private TextMeshProUGUI textTarget;

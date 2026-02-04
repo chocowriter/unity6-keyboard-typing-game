@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace TypingGame
 {
     public class WordController : MonoBehaviour
     {
         private WordModel model;
-        private ModelView view;
+        private WordView view;
 
         private void Awake()
         {
@@ -15,7 +16,10 @@ namespace TypingGame
 
         private void Update()
         {
-            Input.GetKeyUp();
+            Keyboard.current.onTextInput += c =>
+            {
+                Debug.Log(c);
+            };
         }
     }
 }

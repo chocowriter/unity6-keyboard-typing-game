@@ -23,6 +23,11 @@ namespace TypingGame
 
         private void Awake()
         {
+            
+        }
+        
+        public void Init()
+        {
             content.Add("id-1", new Content("apple", "사과"));
             content.Add("id-2", new Content("book", "책"));
             content.Add("id-3", new Content("school", "학교"));
