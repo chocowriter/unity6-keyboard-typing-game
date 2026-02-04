@@ -8,5 +8,22 @@ namespace TypingGame
     {
         private TextMeshProUGUI textTyping;
         private TextMeshProUGUI textTarget;
+
+
+        public void Init()
+        {
+            
+        }
+
+        void Awake()
+        {
+            
+            
+        }
+        
+        public void SetTyping(char _c)
+        {
+            textTyping.text += _c.ToString();
+        }
     }
 }

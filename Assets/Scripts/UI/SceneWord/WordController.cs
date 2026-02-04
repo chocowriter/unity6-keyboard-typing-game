@@ -11,9 +11,13 @@ namespace TypingGame
 
         private void Awake()
         {
+            model = GetComponent<WordModel>();
+            view = GetComponent<WordView>();
+            
             Keyboard.current.onTextInput += c =>
             {
                 Debug.Log(c);
+                view.SetTyping(c);
             };
         }
 
