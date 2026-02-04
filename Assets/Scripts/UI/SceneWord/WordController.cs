@@ -21,9 +21,9 @@ namespace TypingGame
             };
         }
 
-        private void Update()
+        public void CheckIfMatch()
         {
-            
+            //model.
         }
     }
 }

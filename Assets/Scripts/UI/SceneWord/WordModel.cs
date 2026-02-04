@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace TypingGame
 {
-    public enum ELanguageSupport
+    public enum ELanguage
     {
         English = 0,
         Korean = 1
@@ -16,7 +16,7 @@ namespace TypingGame
         private char[] targetArray;
         
         //private WordTester wordTester;
-        
+        public string stringTarget;
 
         private void Awake()
         {
@@ -35,7 +35,7 @@ namespace TypingGame
             content.nameKO = "바나나";
         }
 
-        public char[] GetTargetChars(ELanguageSupport language)
+        public char[] GetTargetChars(ELanguage language)
         {
             char[] charArray = content.nameEN.ToCharArray();
             targetArray = new char[charArray.Length];
