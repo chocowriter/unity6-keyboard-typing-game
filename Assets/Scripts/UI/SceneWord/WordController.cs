@@ -8,7 +8,8 @@ namespace TypingGame
     {
         private WordModel model;
         private WordView view;
-        private char inputKey;
+        private char inputKeyChar;
+        private string inputKeysString;
         private int index = 0;
 
         private void Awake()
@@ -17,26 +18,51 @@ namespace TypingGame
             view = GetComponent<WordView>();
         }
 
+        private void Start()
+        {
+            Init();
+        }
+
         public void Init()
         {
+            index = 0;
+            
+            inputKeysString = string.Empty;
+            // inputKeysString = "";
+            //inputKeysString = null;
+            
+            inputKeyChar = '\0';
+            
             Keyboard.current.onTextInput += c =>
             {
                 Debug.Log(c);
                 index++;
-                inputKey = c;
+                inputKeyChar = c;
                 view.SetTyping(c);
             };
         }
 
-        public void CheckIfMatch()
+        public bool CheckIfMatch()
         {
-            if (model.GetTargetCharacter(index) == inputKey)
+            if (model.GetTargetCharacter(index) == inputKeyChar)
             {
-                
+                return true;
             }
             else
             {
-                
+                return false;
+            }
+        }
+
+        public bool CheckIsSucceeded()
+        {
+            if (model.GetTargetString() == inputKeysString)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }
