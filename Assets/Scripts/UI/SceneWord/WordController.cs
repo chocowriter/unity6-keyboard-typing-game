@@ -8,22 +8,36 @@ namespace TypingGame
     {
         private WordModel model;
         private WordView view;
+        private char inputKey;
+        private int index = 0;
 
         private void Awake()
         {
             model = GetComponent<WordModel>();
             view = GetComponent<WordView>();
-            
+        }
+
+        public void Init()
+        {
             Keyboard.current.onTextInput += c =>
             {
                 Debug.Log(c);
+                index++;
+                inputKey = c;
                 view.SetTyping(c);
             };
         }
 
         public void CheckIfMatch()
         {
-            //model.
+            if (model.GetTargetCharacter(index) == inputKey)
+            {
+                
+            }
+            else
+            {
+                
+            }
         }
     }
 }

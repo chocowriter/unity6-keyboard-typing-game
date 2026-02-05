@@ -11,10 +11,10 @@ namespace TypingGame
     
     public class WordModel : MonoBehaviour
     {
-        //[SerializeField] private Content content;
-
         private string targetString = "sample";
         private char[] targetArray;
+        
+        private string inputString = "";
         
         private void Awake()
         {
@@ -29,6 +29,7 @@ namespace TypingGame
         public void Init()
         {
             targetArray = targetString.ToCharArray();
+            inputString = "";
         }
         
         public string GetTargetString()
@@ -39,6 +40,16 @@ namespace TypingGame
         public char GetTargetCharacter(int _index)
         {
             return targetArray[_index];
+        }
+
+        public void SetKeyInput(string _input)
+        {
+            inputString += _input;
+        }
+
+        public string GetInputString()
+        {
+            return inputString;
         }
     }
 }
