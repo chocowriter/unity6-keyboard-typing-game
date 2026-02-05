@@ -12,7 +12,7 @@ namespace TypingGame
 
         void Awake()
         {
-            model = GetComponentInParent<WordModel>();
+            model = GetComponent<WordModel>();
             
         }
 
